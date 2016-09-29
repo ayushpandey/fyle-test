@@ -10,7 +10,7 @@ app.controller('searchCtrl', ['$scope','$http',function($scope,$http) {
       {id: 'CHANDIGARH', name: 'Chandigarh'}
     ]};
     $scope.itemChanged = function() {
-      var url="https://app.fyle.in/api/bank_branches?city="+$scope.selectedCity+"&offset=0";
+      var url="https://app.fyle.in/api/bank_branches?city="+$scope.selectedCity+"&offset=0&limit=70";
       console.log(url);
       $http.get(url).success(function(response){
         console.log(response);

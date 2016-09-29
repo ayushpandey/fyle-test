@@ -21,27 +21,27 @@
   <br>
   <div class="container">
   <div class="row">
-    <table class="table">
+    <table class="table" class="col-xs-12">
       <thead>
         <tr>
-        <th style="width:20px">S.NO</th>
-        <th style="width:20px">ID</th>
-        <th style="width:300px">NAME</th>
-        <th style="width:150px">IFSC</th>
-        <th style="width:120px">BRANCH</th>
-        <th style="width:400px">ADDRESS</th>
-        <th style="width:150px">STATE</th>
+        <th>S.NO</th>
+        <th>ID</th>
+        <th>NAME</th>
+        <th>IFSC</th>
+        <th>BRANCH</th>
+        <th>ADDRESS</th>
+        <th>STATE</th>
       </tr>
       </thead>
       <tbody>
       <tr ng-repeat="bank in banks | filter:searchText" style="font-size:9pt">
-        <td style="width:20px">{{$index+1}}</td>
-        <td style="width:20px">{{ bank.bank_id }}</td>
-        <td style="width:300px">{{ bank.bank_name }}</td>
-        <td style="width:150px">{{ bank.ifsc }}</td>
-        <td style="width:120px">{{ bank.branch }}</td>
-        <td style="width:400px">{{ bank.address }}</td>
-        <td style="width:150px">{{ bank.state }}</td>
+        <td>{{$index+1}}</td>
+        <td>{{ bank.bank_id }}</td>
+        <td>{{ bank.bank_name }}</td>
+        <td>{{ bank.ifsc }}</td>
+        <td>{{ bank.branch }}</td>
+        <td>{{ bank.address }}</td>
+        <td>{{ bank.state }}</td>
       </tr>
     </tbody>
     </table>
